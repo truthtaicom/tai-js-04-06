@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import ProductList from "./components/ProductList/ProductList";
+import Login from "./components/Login/Login";
 
 const dssp = [
   {
@@ -55,10 +56,12 @@ function App() {
   return (
     <>
       <Header prdInCart={prdInCart } removeProduct={removeProduct}/>
-      <ProductList data={dssp} addToCart={addToCart}/>
+      {/* <ProductList data={dssp} addToCart={addToCart}/> */}
+      <Login />
       <Footer />
     </>
   );
 }
+
 
 export default App;
